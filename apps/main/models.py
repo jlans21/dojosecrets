@@ -36,7 +36,7 @@ class UserManager(models.Manager):
             failed_authentication = True
         elif not found_user:
             print "found_user check came back false"
-            messages.append("NUser not found. Please register as new user.")
+            messages.append("User not found. Please register as new user.")
             failed_authentication = True
 
         if failed_authentication:
